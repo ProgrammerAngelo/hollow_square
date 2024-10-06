@@ -5,5 +5,9 @@ def hollow_square(n):
             print("x" * n)
         else:
             print("x" + " " * (n - 2) + "X")
-hollow_square(n)
+try:
+    side_lenght = int(input("Enter the lenght of the square: "))
+    hollow_square(side_lenght)
+except ValueError as e:
+    print(e)
 #make a code for getting the lenght of the sides
